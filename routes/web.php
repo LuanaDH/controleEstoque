@@ -18,3 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/produtos/cadastrar', 'ProductController@viewForm');
+
+Route::post('/produtos/cadastrar', 'ProductController@create'); //savar cadastro, vai mudar o metodo
