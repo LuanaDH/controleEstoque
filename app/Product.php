@@ -11,6 +11,6 @@ class Product extends Model
     //public $primaryKey = "id"; QDO O ID NÃO ESTIVER EM 1, PARA COLOCARMOS
     //public $timestamps = "false"; SE NÃO TIVER TIMESTAMPS NA TABELA
     public function users(){
-        return $this->belogsTo('App\User');
+        return $this->belongsTo('App\User');
     }
 }

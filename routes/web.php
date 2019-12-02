@@ -20,5 +20,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/produtos/cadastrar', 'ProductController@viewForm');
+Route::post('/produtos/cadastrar', 'ProductController@create'); //salvar cadastro, vai mudar o metodo
 
-Route::post('/produtos/cadastrar', 'ProductController@create'); //savar cadastro, vai mudar o metodo
+Route::get('/produtos/atualizar/{id?}', 'ProductController@viewFormUpdate');
+Route::post('/produtos/atualizar', 'ProductController@update');
+
+Route::get('/produtos', 'ProductController@viewAllProducts');
+Route::get('/produtos/deletar/{id?}', 'ProductController@delete');

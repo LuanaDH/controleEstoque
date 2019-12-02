@@ -40,7 +40,7 @@
             <div class="row">
                 <div class="col-md-12">
                     @if(isset($result)) <!--perguntando se existe -->
-                        @if($result) <!--perguntando se é vdd ou falsp -->
+                        @if($result) <!--perguntando se é vdd ou falso -->
                             <h1>Deu certo</h1>
                         @else
                             <h1>Não deu certo o cadastro</h1>
