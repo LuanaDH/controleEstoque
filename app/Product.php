@@ -10,7 +10,7 @@ class Product extends Model
     //public $tableName = "products"; QDO A TABELA NÃO ESTÁ ORIGINALMENTE COM O NOME NO PLURAL, PARA TROCARMOS
     //public $primaryKey = "id"; QDO O ID NÃO ESTIVER EM 1, PARA COLOCARMOS
     //public $timestamps = "false"; SE NÃO TIVER TIMESTAMPS NA TABELA
-    public function users(){
+    public function user(){
         return $this->belongsTo('App\User');
     }
 }
